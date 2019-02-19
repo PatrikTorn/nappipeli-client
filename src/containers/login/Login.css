@@ -1,0 +1,32 @@
+.duck {
+    width:100px;
+    height:auto;
+    border-radius:10px;
+    background-image: radial-gradient(transparent, rgba(0,0,0,0.50));
+    cursor:pointer;
+    margin:10px;
+}
+
+.duck:hover {
+    transform: scale(1.5);
+}
+
+.login-container {
+    box-shadow: #999 0 0 12px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.login-wrapper {
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}

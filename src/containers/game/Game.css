@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    flex:0.1;
+    background: rebeccapurple;
+    color:white;
+}
+
+.header .header-left {
+    flex:0.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-center {
+    flex:0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.header .header-right {
+    flex:0.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-right .doughnuts {
+    background-image: url(../../images/doughnuts.png);
+    background-size: cover;
+    height:50px;
+    width:50px; 
+}
+
+.header .header-center .logo {
+    background-image: url(../../images/logo.png);
+    background-size: cover;
+    height:50px;
+    width:50px; 
+}
+
+.footer {
+    flex:0.05;
+    background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.content {
+    background-color: red;
+    display:flex;
+    flex:1;
+    flex-direction: row;
+
+}
+
+.box-left {
+    background-color: white;
+    flex:0.1;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin:10px;
+    padding:10px;
+    background-color: rebeccapurple;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.box-right {
+    background-color: white;
+    flex:0.1;
+    display:flex;
+    flex-direction: column;
+}
+
+.game {
+    display: flex;
+    flex:0.8;
+    position:relative;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 15px -5px rgba(0,0,0,0.54);
+}
+
+.next-win {
+    position:absolute;
+    top:5px;
+    margin:auto;
+}
+
+.button {
+    border-radius:50%;
+    cursor:pointer;
+    width:60%;
+    height:auto;
+    border:5px solid black;
+    box-shadow: 0px -1px 41px -11px rgba(0,0,0,0.50);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    content: url(../../images/button.jpg);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: rotate(10deg);
+}
+
+.img {
+    width:250px;
+    height:250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        width:90%;
+    }
+  }

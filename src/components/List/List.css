@@ -1,0 +1,21 @@
+.list {
+    display:table;
+    width:100%;
+}
+
+.list-row {
+    display:table-row;
+    width:100%;
+}
+
+.list-heading {
+    font-weight: bold;
+    display: table-cell;
+    font-size:25px;
+}
+
+.list-item {
+    display: table-cell;
+    
+    font-size:25px;
+}
